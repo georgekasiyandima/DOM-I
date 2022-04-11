@@ -39,4 +39,17 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+//IMAGES
+const logoImg = document.querySelector('#logo-img')
+logoImg.src = siteContent.images['logo-img']
+
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.src = siteContent.images['cta-img']
+
+const midImg = document.querySelector('#middle-img')
+midImg.setAttribute('src',siteContent.images['accent-img'])
+
+//FOOTER LINK
+const footerLink = document.querySelector('footer a')
+footerLink.textContent = siteContent.footer.copyright
+
